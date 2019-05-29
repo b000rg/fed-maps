@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript"> 
+function loadimg(sel) {
+	var sel = document.getElementById(sel)
+	document.getElementById("image").innerHTML="<img src='images/" + sel.value + ".jpg' style='width:100%'></img>"
+}
+</script>
+<style>
+.column {
+	float:left;
+	width:50%;
+}
+</style>
+</head>
+<body>
+<div class="column">
+<img src="images/solmap-hires.png" style="width:100%"></img>
+</div>
+<div class="column">
+Map:
+<select id="mapselect" name="mapselect" onchange="loadimg(this.id)">
+	<option value="brass">Brass</option>
+	<option value="castillo">Castillo</option>
+	<option value="doris">Doris</option>
+	<option value="earth">Earth</option>
+	<option value="lattice">The Lattice</option>
+	<option value="magellan">Magellan</option>
+	<option value="mars">Mars</option>
+	<option value="mercury">Mercury</option>
+	<option value="moon">Moon (Selena)</option>
+	<option value="paradise">Paradise</option>
+	<option value="pearl">Pearl</option>
+	<option value="phobos">Phobos</option>
+	<option value="rhea">Rhea</option>
+	<option value="silk">Silk</option>
+	<option value="sumatra">Sumatra</option>
+	<option value="titan">Titan</option>
+	<option value="venus">Venus</option>
+</select>
+<div id="image"></div>
+</div>
+</body>
