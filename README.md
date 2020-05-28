@@ -6,3 +6,5 @@ If you're familiar with Git, you can just clone the repository and open up `inde
 
 ## I thought you said this thing shows planet maps!
 You need to use the dropdown box on the right side to tell it which planet map to show.
+
+All images in this project come from the Federation 2 official website and are distributed with permission from the creator.
